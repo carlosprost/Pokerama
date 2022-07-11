@@ -37,8 +37,8 @@ body{
 .cartas{
     min-width: 20px;
     min-height: 40px;
-    width: 80px;
-    height: 100px;
+    width: 60px;
+    height: 80px;
     background-image: url('../../assets/lomo_carta.jpg');
     background-repeat: no-repeat;
     background-size: cover;
