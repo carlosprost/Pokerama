@@ -291,7 +291,7 @@ function sumarPuntos(){
 
 /* Timer */
 
-let min = 2;
+let min = 0;
 let seg = 60;
 
 let timer = setInterval(()=>{
