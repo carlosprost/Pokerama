@@ -27,22 +27,32 @@
 }
 
 .titulo-ranking{
-    color: white;
+    color: red;
+    -webkit-text-stroke: 1px white;
     font-size: 30px;
 }
 
 .ranking{
     width: 600px;
     height: 500px;
-    border: 2px solid white;
+    border: 2px solid red;
     border-radius: 5px;
 }
 
-.ranking table{
+.tabla-posiciones{
     width: 100%;
-    color: white;
-    border: 1px solid white;
+    font-size: 20px;
+    color: red;
+    -webkit-text-stroke: 1px white;
+    border: 1px solid red;
+    border-bottom: 0px;
 }
+.tabla-posiciones tr td{
+    border: 0px;
+    text-align: center;
+}
+
+
 .controller{
     width: 100%;
     display: flex;
@@ -52,8 +62,9 @@
 
 .back{
     background-color: transparent;
-    color: white;
+    color: red;
     margin-left: 50px;
     font-family: 'aro';
     font-size: 25px;
+    -webkit-text-stroke: 1px white;
 }
