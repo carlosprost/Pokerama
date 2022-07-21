@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'pokemon';
+    src: url('../../css/fonts/PokemonS.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: gray;
+    font-family: 'pokemon';
+    background-image: url('../../assets/background-level2.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    width: 70vw;
+    height: 100vh;
+    margin: auto;
+}
+
+
+.container-game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding-top: 20px;
+
+
+}
+
+#btn{
+    height: 100%;
+    margin-left: 10px;
+}
+.container-nav button{
+    width: 50px;
+    height: 100%;
+    background-color: aqua;
+
+}
+
+.cartas-facil{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    grid-template-rows: auto;
+}
+.cartas-medio{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 5px;
+}
+.cartas-dificil{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 5px;
+    grid-template-rows: auto;
+}
+
+@media screen and (max-width: 480px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+        width: 100vw;
+        height: 100vh;
+        margin: auto;
+    }
+    
+    .cartas-medio{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 5px;
+    }
+    .cartas-dificil{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 5px;
+        grid-template-rows: auto;
+    }
+    .cartas-medio .carta{
+        width: 60px;
+        height: 70px;
+
+        border: 1px solid black
+    }
+
+    .cartas-dificil .carta{
+        width: 50px;
+        height: 60px;
+
+        border: 1px solid black
+    }
+
+    .controller{
+        width: 100%;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-start;
+        margin: 0px auto;
+    }
+
+    .backBTN{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 33%;
+        text-align: start;
+        
+    }
+    .backBTN button{
+        background-color: transparent;
+        font-family: 'pokemon';
+        font-size: 15px;
+        color: rgb(219, 207, 42);
+        text-shadow: -2px 0 blue, 0 2px blue, 2px 0 blue, 0 -2px blue;
+        margin-top: 30px;
+    }
+    .time{
+        width: 33%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        font-size: 15px;
+        color: rgb(219, 207, 42);
+        text-shadow: -2px 0 blue, 0 2px blue, 2px 0 blue, 0 -2px blue;
+    }
+    .puntos{
+        width: 33%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 15px;
+        color: rgb(219, 207, 42);
+        text-shadow: -2px 0 blue, 0 2px blue, 2px 0 blue, 0 -2px blue;
+    }
+}
+
+.carta{
+    width: 70px;
+    height: 90px;
+
+    border: 1px solid black;
+}
+.carta-desabilitada{
+    cursor: not-allowed;
+    pointer-events: none;
+    background-color: green;
+}
+
+.cartas-dificil .carta{
+    width: 60px;
+    height: 70px;
+
+    border: 1px solid black
+}
+
+.back{
+    background-image: url("../../assets/back.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.front{
+    background-color: white;
+}
+
+
+.controller{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0px auto;
+    
+}
+.backBTN{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items:stretch;
+    width: 33%;
+    text-align: start;
+    
+}
+.backBTN button{
+    background-color: transparent;
+    font-family: 'pokemon';
+    font-size: 25px;
+    color: rgb(219, 207, 42);
+    text-shadow: -3px 0 blue, 0 3px blue, 3px 0 blue, 0 -3px blue;
+    border: 0px;
+    margin: 0px 10px;
+}
+.time{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content:baseline;
+    align-items: center;
+    height: 100%;
+    font-size: 25px;
+    color: rgb(219, 207, 42);
+    text-shadow: -3px 0 blue, 0 3px blue, 3px 0 blue, 0 -3px blue;
+}
+.puntos{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    font-size: 25px;
+    color: rgb(219, 207, 42);
+    text-shadow: -3px 0 blue, 0 3px blue, 3px 0 blue, 0 -3px blue;
+}

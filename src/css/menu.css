@@ -6,8 +6,8 @@
 }
 
 @font-face {
-    font-family: 'aro';
-    src: url('./fonts/ARCO.ttf') format("truetype");
+    font-family: 'pokemon';
+    src: url('./fonts/PokemonS.ttf') format("truetype");
     font-weight: normal;
     font-style: normal;
  }
@@ -25,6 +25,7 @@
     background-image: url('../assets/background.webp');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .caratula{
@@ -44,10 +45,10 @@
     height: 100px;
     margin-bottom: 30px;
     text-align: center;
-    font-family: 'aro';
+    font-family: 'pokemon';
     font-size: 35px;
-    color: rgb(14, 129, 174);
-
+    color: rgb(219, 207, 42);
+    text-shadow: -7px 0 blue, 0 7px blue, 7px 0 blue, 0 -7px blue;
 }
 .titulo h1{
     margin: 30px auto;
@@ -67,8 +68,8 @@
 .btn-inicio button{
     width: 150px;
     height: 70px;
-    color: rgba(0, 0, 0, 0.8);
-    font-family: 'aro';
+    color: rgb(219, 207, 42);
+    font-family: 'pokemon';
     font-size: 20px;
     background-color: yellowgreen;
     border: 1px solid green;
@@ -89,8 +90,70 @@
 .back{
     background-color: transparent;
     border: 0px;
-    color: black;
+    color: rgb(219, 207, 42);
+    text-shadow: -7px 0 blue, 0 7px blue, 7px 0 blue, 0 -7px blue;
     margin-left: 50px;
     font-size: 25px;
-    font-family: 'aro';
+    font-family: 'pokemon';
+}
+
+@media screen and (max-width: 480px) {
+    .contenedor-index{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    
+        background-image: url('../assets/background.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .caratula{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    .titulo{
+    
+        width: 80%;
+        height: 100px;
+        margin-bottom: 10px;
+        text-align: center;
+        font-family: 'pokemon';
+        font-size: 20px;
+        color: rgb(219, 207, 42);
+        text-shadow: -7px 0 blue, 0 7px blue, 7px 0 blue, 0 -7px blue;
+    
+    }
+    .titulo h1{
+        margin: 10px auto;
+        
+    }
+    .btn-inicio{
+        display: flex;
+        width: 80%;
+        height: 200px;
+        margin: 30px;
+        justify-content:center;
+        align-items: flex-start;
+        
+    }
+    .btn-inicio button{
+        width: 100px;
+        height: 70px;
+        color: rgba(0, 0, 0, 0.8);
+        font-family: 'pokemon';
+        font-size: 20px;
+        background-color: yellowgreen;
+        border: 1px solid green;
+        box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.3) /* offset-x | offset-y | blur-radius | spread-radius | color */
+    }
+
 }
