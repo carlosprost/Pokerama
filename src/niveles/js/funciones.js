@@ -109,7 +109,7 @@ function cambiarAFront(id){
     let card= document.getElementById(id);
     card.classList.remove('back');
     card.classList.add('front');
-    card.style.backgroundImage = `url("../assets/${cartas[id-1]._front}.png")`;
+    card.style.backgroundImage = `url("../assets/${cartas[id-1]._front}.webp")`;
     card.style.backgroundSize = 'contain';
     card.style.backgroundRepeat = 'no-repeat';
     card.style.backgroundPosition = 'center';
