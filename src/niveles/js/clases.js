@@ -1,33 +1,78 @@
-export class Timer{
-    constructor(minutos, segundos){
-        this.minutos = minutos;
-        this.segundos = segundos;
-        this.tiempo = '0' + this.minutos + ':' + this.segundos;
+export class Timer {
+  constructor(reloj) {
+    this.minutos = 0;
+    this.segundos = 0;
+    this.tiempo = "";
+    this.interval = null;
+    this.reloj = reloj;
+  }
+
+  timer() {
+    this.interval = setInterval(() => {
+      if (this.segundos < 60) {
+        this.segundos += 1;
+      } else {
+        this.minutos += 1;
+        this.segundos = 0;
+      }
+
+      this.reloj.innerText = this.getTimer();
+    }, 1000);
+  }
+
+  getTimer() {
+    let m = this.minutos;
+    let s = this.segundos;
+
+    if (this.minutos < 10) {
+      m = "0" + this.minutos;
     }
 
-    get contador(){
-        if(this.minutos > 10 && this.segundos > 10){
-            this.tiempo = this.minutos + ':' + this.segundos;
-        }else if(this.minutos > 10 && this.segundos < 10){
-            this.tiempo = this.minutos + ':0' + this.segundos;
-        }else if(this.minutos < 10 && this.segundos < 10){
-            this.tiempo = '0' + this.minutos + ':0' + this.segundos;
-        }
-        return this.tiempo;
+    if (this.segundos < 10) {
+      s = "0" + this.segundos;
     }
+    this.tiempo = `${m}:${s}`;
 
+    return this.tiempo;
+  }
+
+  stopTime() {
+    clearInterval(this.interval);
+  }
+
+  resetTime() {
+    clearInterval(this.interval);
+    this.minutos = 0;
+    this.segundos = 0;
+    this.tiempo = "00:00";
+  }
 }
 
+export class Puntos {
+  constructor(puntaje) {
+    this.puntos = 0;
+    this.contenedor = puntaje;
+    this.mostrarPuntos();
+  }
 
-export class Carta{
-    
-    constructor(front){
-        this._back = 'back.png';
-        this._front = front;
-    }
+  getPuntos() {
+    return this.puntos;
+  }
+  sumarPuntos() {
+    this.puntos += 1;
+  }
 
+  mostrarPuntos() {
+    this.contenedor.innerText = this.getPuntos();
+  }
 }
 
+export class Carta {
+  constructor(front) {
+    this._front = front;
+  }
 
-
-
+  getFront() {
+    return this._front;
+  }
+}

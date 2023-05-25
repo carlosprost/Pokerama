@@ -1,70 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../../css/style.css" />
     <title>Document</title>
-</head>
-<body>
-    
-    <div class="container">
+  </head>
+  <body>
+    <div class="container-nivel">
+      <div class="controller">
+        <button type="button" class="back" id="back">BACK</button>
+        <div class="backBTN">
+          <button type="button" id="start">START</button>
+          <button type="button" id="restart" hidden>RESTART</button>
+        </div>
+        <div class="time">
+          <p>TIME</p>
+          <div id="reloj">00:00</div>
+        </div>
+        <div class="puntos">
+          <p>PUNTOS</p>
+          <div id="puntos">0</div>
+        </div>
+      </div>
 
-        <div class="controller">
-            <div class="backBTN">
-                <button type="button" id="back">BACK</button>
-                <button type="button" id="start">START</button>
-                <button type="button" id="restart" hidden>RESTART</button>
-            </div>
-            <div class="time"><p>TIME</p> <div id="reloj">01:00</div></div>
-            <div class="puntos"><p>PUNTOS</p> <div id="puntos">0</div></div>
+      <div class="container-game">
+        <div class="cartas-hard">
+          <div class="carta back" id="1"></div>
+          <div class="carta back" id="2"></div>
+          <div class="carta back" id="3"></div>
+          <div class="carta back" id="4"></div>
+          <div class="carta back" id="5"></div>
+          <div class="carta back" id="6"></div>
+          <div class="carta back" id="7"></div>
+          <div class="carta back" id="8"></div>
+          <div class="carta back" id="9"></div>
+          <div class="carta back" id="10"></div>
+          <div class="carta back" id="11"></div>
+          <div class="carta back" id="12"></div>
+          <div class="carta back" id="13"></div>
+          <div class="carta back" id="14"></div>
+          <div class="carta back" id="15"></div>
+          <div class="carta back" id="16"></div>
+          <div class="carta back" id="17"></div>
+          <div class="carta back" id="18"></div>
+          <div class="carta back" id="19"></div>
+          <div class="carta back" id="20"></div>
+          <div class="carta back" id="21"></div>
+          <div class="carta back" id="22"></div>
+          <div class="carta back" id="23"></div>
+          <div class="carta back" id="24"></div>
+          <div class="carta back" id="25"></div>
+          <div class="carta back" id="26"></div>
+          <div class="carta back" id="27"></div>
+          <div class="carta back" id="28"></div>
+          <div class="carta back" id="29"></div>
+          <div class="carta back" id="30"></div>
+          <div class="carta back" id="31"></div>
+          <div class="carta back" id="32"></div>
+          <div class="carta back" id="33"></div>
+          <div class="carta back" id="34"></div>
+          <div class="carta back" id="35"></div>
+          <div class="carta back" id="36"></div>
         </div>
-            
-        <div class="container-game">
-            <div class="cartas-dificil">
-                <div class="carta back" id="1"></div>
-                <div class="carta back" id="2"></div>
-                <div class="carta back" id="3"></div>
-                <div class="carta back" id="4"></div>
-                <div class="carta back" id="5"></div>
-                <div class="carta back" id="6"></div>
-                <div class="carta back" id="7"></div>
-                <div class="carta back" id="8"></div>
-                <div class="carta back" id="9"></div>
-                <div class="carta back" id="10"></div>
-                <div class="carta back" id="11"></div>
-                <div class="carta back" id="12"></div>
-                <div class="carta back" id="13"></div>
-                <div class="carta back" id="14"></div>
-                <div class="carta back" id="15"></div>
-                <div class="carta back" id="16"></div>
-                <div class="carta back" id="17"></div>
-                <div class="carta back" id="18"></div>
-                <div class="carta back" id="19"></div>
-                <div class="carta back" id="20"></div>
-                <div class="carta back" id="21"></div>
-                <div class="carta back" id="22"></div>
-                <div class="carta back" id="23"></div>
-                <div class="carta back" id="24"></div>
-                <div class="carta back" id="25"></div>
-                <div class="carta back" id="26"></div>
-                <div class="carta back" id="27"></div>
-                <div class="carta back" id="28"></div>
-                <div class="carta back" id="29"></div>
-                <div class="carta back" id="30"></div>
-                <div class="carta back" id="31"></div>
-                <div class="carta back" id="32"></div>
-                <div class="carta back" id="33"></div>
-                <div class="carta back" id="34"></div>
-                <div class="carta back" id="35"></div>
-                <div class="carta back" id="36"></div>
-            </div>
-        </div>
-       
+      </div>
     </div>
 
     <script src="./js/dificil.js" type="module"></script>
-</body>
+  </body>
 </html>

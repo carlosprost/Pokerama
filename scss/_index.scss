@@ -1,0 +1,56 @@
+.contenedor-index {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url("../src/assets/background.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .caratula {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .titulo {
+      font-size: 2rem;
+      color: $text;
+      text-shadow: 7px 5px 10px $shadowColor;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .btn-inicio {
+      width: 50%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      button {
+        width: 200px;
+        height: 70px;
+        margin: 0 5px;
+        border-radius: 10px;
+        border: none;
+        background-color: $text;
+        color: $shadowColor;
+        font-size: 20px;
+        box-shadow: 3px 5px 10px 3px $shadowColor;
+
+        &:hover {
+          cursor: pointer;
+          background-color: $shadowColor;
+          color: $text;
+          box-shadow: 3px 5px 10px 3px black;
+        }
+      }
+    }
+  }
+}

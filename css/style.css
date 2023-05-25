@@ -1,0 +1,244 @@
+@font-face {
+  font-family: "pokemon";
+  src: url("./fonts/PokemonS.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "pokemon";
+}
+
+button {
+  width: 300px;
+  height: 50px;
+  margin: 0 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(219, 207, 42);
+  color: blue;
+  box-shadow: 3px 5px 10px 3px blue;
+}
+button:hover {
+  cursor: pointer;
+  background-color: blue;
+  color: rgb(219, 207, 42);
+  box-shadow: 3px 5px 10px 3px black;
+}
+
+.contenedor-index {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url("../src/assets/background.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-index .caratula {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-index .caratula .titulo {
+  font-size: 2rem;
+  color: rgb(219, 207, 42);
+  text-shadow: 7px 5px 10px blue;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.contenedor-index .caratula .btn-inicio {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.contenedor-index .caratula .btn-inicio button {
+  width: 200px;
+  height: 70px;
+  margin: 0 5px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(219, 207, 42);
+  color: blue;
+  font-size: 20px;
+  box-shadow: 3px 5px 10px 3px blue;
+}
+.contenedor-index .caratula .btn-inicio button:hover {
+  cursor: pointer;
+  background-color: blue;
+  color: rgb(219, 207, 42);
+  box-shadow: 3px 5px 10px 3px black;
+}
+
+.contenedor-ranking {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url("../src/assets/background-ranking.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-ranking .titulo-ranking {
+  font-size: 1.5rem;
+  color: rgb(219, 207, 42);
+  text-shadow: 7px 5px 10px blue;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.contenedor-ranking .ranking {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-ranking .ranking .tabla-posiciones {
+  width: 70%;
+  color: rgb(219, 207, 42);
+  text-shadow: 7px 5px 10px blue;
+  font-size: 20px;
+  border: 1px solid rgb(219, 207, 42);
+  box-shadow: 3px 5px 10px 3px blue;
+}
+
+.container-nivel {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../src/assets/background-level.png");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+.container-nivel .controller {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0, 0, 255, 0.5);
+  color: rgb(219, 207, 42);
+  text-shadow: 7px 5px 10px blue;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.container-nivel .controller button {
+  width: 60px;
+}
+.container-nivel .controller .time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container-nivel .controller .puntos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container-nivel .container-game {
+  width: 85%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-nivel .container-game .cartas-facil {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+}
+.container-nivel .container-game .cartas-facil .carta {
+  width: 100px;
+  height: 130px;
+  border: 1px solid black;
+}
+.container-nivel .container-game .cartas-facil .carta-desabilitada {
+  cursor: not-allowed;
+  pointer-events: none;
+  background-color: green;
+}
+.container-nivel .container-game .cartas-facil .back {
+  background-image: url("../src/assets/back.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container-nivel .container-game .cartas-facil .front {
+  background-color: white;
+}
+.container-nivel .container-game .cartas-medium {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1px;
+}
+.container-nivel .container-game .cartas-medium .carta {
+  width: 65px;
+  height: 100px;
+  border: 1px solid black;
+}
+.container-nivel .container-game .cartas-medium .carta-desabilitada {
+  cursor: not-allowed;
+  pointer-events: none;
+  background-color: green;
+}
+.container-nivel .container-game .cartas-medium .back {
+  background-image: url("../src/assets/back.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container-nivel .container-game .cartas-medium .front {
+  background-color: white;
+}
+.container-nivel .container-game .cartas-hard {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1px;
+}
+.container-nivel .container-game .cartas-hard .carta {
+  width: 65px;
+  height: 100px;
+  border: 1px solid black;
+}
+.container-nivel .container-game .cartas-hard .carta-desabilitada {
+  cursor: not-allowed;
+  pointer-events: none;
+  background-color: green;
+}
+.container-nivel .container-game .cartas-hard .back {
+  background-image: url("../src/assets/back.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container-nivel .container-game .cartas-hard .front {
+  background-color: white;
+}
+
+.controller .back {
+  width: 70px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}/*# sourceMappingURL=style.css.map */

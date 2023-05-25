@@ -1,0 +1,143 @@
+.container-nivel {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("../src/assets/background-level.png");
+  background-size: cover;
+  background-position: center;
+
+  overflow: hidden;
+
+  .controller {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 255, 0.5);
+    color: $text;
+    text-shadow: 7px 5px 10px $shadowColor;
+    font-size: 25px;
+    margin-bottom: 10px;
+
+    button {
+      width: 60px;
+    }
+
+    .time {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .puntos {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .container-game {
+    width: 85%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .cartas-facil {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      .carta {
+        width: 100px;
+        height: 130px;
+
+        border: 1px solid black;
+      }
+      .carta-desabilitada {
+        cursor: not-allowed;
+        pointer-events: none;
+        background-color: green;
+      }
+
+      .back {
+        background-image: url("../src/assets/back.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .front {
+        background-color: white;
+      }
+    }
+
+    .cartas-medium {
+        width: 100%;
+        
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 1px;
+        
+
+        .carta {
+          width: 65px;
+          height: 100px;
+  
+          border: 1px solid black;
+        }
+        .carta-desabilitada {
+          cursor: not-allowed;
+          pointer-events: none;
+          background-color: green;
+        }
+  
+        .back {
+          background-image: url("../src/assets/back.jpg");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        .front {
+          background-color: white;
+        }
+      }
+
+      .cartas-hard {
+        width: 100%;
+        
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 1px;
+        
+
+        .carta {
+          width: 65px;
+          height: 100px;
+  
+          border: 1px solid black;
+        }
+        .carta-desabilitada {
+          cursor: not-allowed;
+          pointer-events: none;
+          background-color: green;
+        }
+  
+        .back {
+          background-image: url("../src/assets/back.jpg");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        .front {
+          background-color: white;
+        }
+      }
+  }
+}
