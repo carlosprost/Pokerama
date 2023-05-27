@@ -112,6 +112,7 @@ button:hover {
   font-size: 20px;
   border: 1px solid rgb(219, 207, 42);
   box-shadow: 3px 5px 10px 3px blue;
+  text-align: center;
 }
 
 .container-nivel {
@@ -154,7 +155,7 @@ button:hover {
   align-items: center;
 }
 .container-nivel .container-game {
-  width: 85%;
+  width: 400px;
   height: 70%;
   display: flex;
   justify-content: center;
@@ -164,11 +165,13 @@ button:hover {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   gap: 1px;
 }
 .container-nivel .container-game .cartas-facil .carta {
   width: 100px;
-  height: 130px;
+  height: 100px;
+  background-color: white;
   border: 1px solid black;
 }
 .container-nivel .container-game .cartas-facil .carta-desabilitada {
@@ -183,17 +186,23 @@ button:hover {
   background-size: cover;
 }
 .container-nivel .container-game .cartas-facil .front {
+  width: 100%;
   background-color: white;
 }
-.container-nivel .container-game .cartas-medium {
+.container-nivel .container-game .cartas-facil .front img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container-nivel .container-game .cartas-medium {
+  width: 400px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 1px;
 }
 .container-nivel .container-game .cartas-medium .carta {
   width: 65px;
-  height: 100px;
+  height: 65px;
   border: 1px solid black;
 }
 .container-nivel .container-game .cartas-medium .carta-desabilitada {
@@ -208,17 +217,23 @@ button:hover {
   background-size: cover;
 }
 .container-nivel .container-game .cartas-medium .front {
+  width: 100%;
   background-color: white;
 }
-.container-nivel .container-game .cartas-hard {
+.container-nivel .container-game .cartas-medium .front img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container-nivel .container-game .cartas-hard {
+  width: 400px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 1px;
 }
 .container-nivel .container-game .cartas-hard .carta {
   width: 65px;
-  height: 100px;
+  height: 65px;
   border: 1px solid black;
 }
 .container-nivel .container-game .cartas-hard .carta-desabilitada {
@@ -233,7 +248,13 @@ button:hover {
   background-size: cover;
 }
 .container-nivel .container-game .cartas-hard .front {
+  width: 100%;
   background-color: white;
+}
+.container-nivel .container-game .cartas-hard .front img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .controller .back {

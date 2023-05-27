@@ -70,9 +70,10 @@ export class Puntos {
 export class Carta {
   constructor(front) {
     this._front = front;
+    this._url = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${this._front}.png`;
   }
 
   getFront() {
-    return this._front;
+    return `<img src="${this._url}" alt="pokemon">`;
   }
 }

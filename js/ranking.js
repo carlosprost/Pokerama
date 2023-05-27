@@ -16,9 +16,9 @@ let gammerPosition = [
         "points": "8" 
     },
     {
-        "position": "1",
-        "name": "CAP",
-        "points": "8" 
+        "position": "---",
+        "name": "---",
+        "points": "---" 
     }
 ];
 

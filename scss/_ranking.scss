@@ -29,10 +29,11 @@
     .tabla-posiciones {
       width: 70%;
       color: $text;
-        text-shadow: 7px 5px 10px $shadowColor;
+      text-shadow: 7px 5px 10px $shadowColor;
       font-size: 20px;
       border: 1px solid $text;
       box-shadow: 3px 5px 10px 3px $shadowColor;
+      text-align: center;
     }
   }
 }
